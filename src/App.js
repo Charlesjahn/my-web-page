@@ -17,7 +17,7 @@ function App() {
         <Container>
           <Routes>
 
-            <Route path="/" element={<Home />} />
+            <Route path="/my-web-page" element={<Home />} />
 
             <Route path="/timeline" element={<Timeline />} />
 

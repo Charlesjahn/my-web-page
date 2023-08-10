@@ -21,7 +21,7 @@ function NavBar() {
 
     return (
         <header>
-            <Link to="/" onClick={closeNavBar}>
+            <Link to="/my-web-page" onClick={closeNavBar}>
                 <img className={styles.img_logo} src={imgLogo} alt="My Logo" />
             </Link>
 
