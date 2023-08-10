@@ -1,0 +1,12 @@
+import styles from './Footer.module.css'
+
+function Footer() {
+
+    return (
+        <section>
+            <h1>Footer</h1>
+        </section>
+    )
+}
+
+export default Footer
