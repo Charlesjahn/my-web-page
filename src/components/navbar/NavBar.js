@@ -16,7 +16,7 @@ function NavBar() {
         setNavVisible(!navVisible);
     }
     const closeNavBar = () => {
-        setNavVisible(!navVisible);
+        setNavVisible(false);
     }
 
     return (
