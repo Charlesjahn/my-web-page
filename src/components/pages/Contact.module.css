@@ -94,6 +94,7 @@ section .social {
         width: 350px;
     }
     .social a {
+        width: 4.5em;
         height: 4.5em;
     }
     .social a svg {
