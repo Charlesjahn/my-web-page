@@ -13,14 +13,15 @@ section .social {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.social span {
-    font-size: 1.5em;
-    margin: .25em;
-    padding: .25em;
+.social div{
+    width: 9.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .social a {
-
     text-decoration: none;
     color: white;
     display: flex;
@@ -86,7 +87,11 @@ section .social {
 }
 
 
-@media only screen and (width <=1069px) {}
+@media only screen and (width <=1069px) {
+    section .social {
+        width:400px;
+    }
+}
 
 
 @media only screen and (width <=750px) {
@@ -99,6 +104,13 @@ section .social {
     }
     .social a svg {
         font-size: 3em;
+    }
+    .social div{
+        width: 7.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
 }
