@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my-web-page/static/css/main.ac70acd0.css",
+    "main.js": "/my-web-page/static/js/main.d4747979.js",
+    "static/media/back.jpg": "/my-web-page/static/media/back.abb3d170674927103d51.jpg",
+    "static/media/backSmall.jpg": "/my-web-page/static/media/backSmall.cf1a8d07fb56e761f1db.jpg",
+    "static/media/logomini_trans.png": "/my-web-page/static/media/logomini_trans.ca8e9dee53696ae46b5f.png",
+    "index.html": "/my-web-page/index.html",
+    "main.ac70acd0.css.map": "/my-web-page/static/css/main.ac70acd0.css.map",
+    "main.d4747979.js.map": "/my-web-page/static/js/main.d4747979.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac70acd0.css",
+    "static/js/main.d4747979.js"
+  ]
+}
