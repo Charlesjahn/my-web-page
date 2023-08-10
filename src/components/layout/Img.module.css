@@ -1,6 +1,7 @@
 @import url('../../components/layout/GlobalStyle.css');
 
 .main img {
+    margin: 1.5em;
     width: 18em;
     height: 18em;
     border-radius: 50%;

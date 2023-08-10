@@ -40,8 +40,10 @@ header a {
     color: var(--color-primary);
     margin: 0 2em;
     transition: 0.5s;
+    font-size: large;
 }
-header svg{
+
+header svg {
     font-size: 2em;
 }
 
@@ -59,7 +61,7 @@ header a:hover {
         top: -100%;
         left: 0;
         height: 100%;
-        width: fit-content;        
+        width: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -67,12 +69,16 @@ header a:hover {
         transition: top 0.5s;
     }
 
-    nav a, .closeBtn{
+    nav a,
+    .closeBtn {
         margin: 25px 10px;
     }
 
-    header .responsive_nav{
+    header .responsive_nav {
         top: 0;
     }
-    
+
+    header a {
+        font-size: normal;
+    }
 }
