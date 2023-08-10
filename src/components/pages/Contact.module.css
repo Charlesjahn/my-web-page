@@ -1,0 +1,96 @@
+@import url('../layout/GlobalStyle.css');
+
+section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: var(--color-secondary);
+}
+
+section .social {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.social span {
+    font-size: 1.5em;
+    margin: .25em;
+    padding: .25em;
+}
+
+.social a {
+
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7.5em;
+    height: 7.5em;
+    border-radius: 50%;
+    margin: .8em;
+
+    box-shadow: 0px 0px 10px var(--color-white-trans),
+        0px 0px 20px var(--color-white-trans),
+        0px 0px 30px var(--color-white-trans),
+        0px 0px 40px var(--color-white-trans),
+        0px 0px 50px var(--color-white-trans);
+}
+
+.social a:hover,
+.social a:active {
+    color: var(--color-secondary-trans);
+    animation: spin 1.5s linear infinite;
+    box-shadow: 0px 0px 10px var(--color-black1-trans),
+        0px 0px 20px var(--color-black1-trans),
+        0px 0px 30px var(--color-black1-trans),
+        0px 0px 40px var(--color-black1-trans),
+        0px 0px 50px var(--color-black1-trans);
+}
+
+.social a svg {
+    font-size: 5em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.insta {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #9012fe, #6b13d4, #3814a2, #051b80, #051b80);
+}
+
+.whats {
+    background-color: #25D366;
+}
+
+.gmail {
+    background: linear-gradient(45deg, rgb(221, 44, 0), rgb(255, 65, 54), rgb(255, 220, 0), rgb(0, 200, 83), rgb(0, 157, 224), rgb(63, 81, 181));
+}
+
+.github {
+    background-color: rgb(111, 66, 193);
+}
+
+.link {
+    background-color: rgb(0, 119, 181);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media only screen and (width <=1069px) {}
+
+
+@media only screen and (width <=750px) {
+    section .social {
+        width: 350px;
+    }
+}

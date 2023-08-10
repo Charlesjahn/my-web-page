@@ -4,39 +4,39 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 
 import { Link } from 'react-router-dom'
 
-import { useRef } from 'react'
-
 import styles from './NavBar.module.css'
 
 import imgLogo from '../../img/logomini_trans.png'
 
 function NavBar() {
 
-    const navRef = useRef();
+    const [navVisible, setNavVisible] = useState(false);
 
     const showNavBar = () => {
-        navRef.current.classList.toggle("responsive_nav");
-        console.log("working")
+        setNavVisible(!navVisible);
+    }
+    const closeNavBar = () => {
+        setNavVisible(!navVisible);
     }
 
     return (
         <header>
-            <Link to="/" className={styles.link}><
-                img src={imgLogo} alt="My Logo" />
+            <Link to="/" onClick={closeNavBar}>
+                <img className={styles.img_logo} src={imgLogo} alt="My Logo" />
             </Link>
 
-            <nav ref={navRef}>
+            <nav className={navVisible ? styles.responsive_nav : styles.nav}>
 
-                <Link to="/Projects" className={styles.link}>Projects</Link>
-                <Link to="/contact" className={styles.link}>Contact</Link>
-                <Link to="/Timeline" className={styles.link}>Timeline</Link>
-
-                <button className='nav_btn Nav_close_btn' onClick={showNavBar}>
+                <button className={styles.closeBtn} onClick={showNavBar}>
                     <FaTimes />
                 </button>
+                <Link to="/Projects" onClick={closeNavBar}>Projects</Link>
+                <Link to="/contact" onClick={closeNavBar}>Contact</Link>
+                <Link to="/Timeline" onClick={closeNavBar}>Timeline</Link>
+
             </nav>
 
-            <button className='nav_btn' onClick={showNavBar}>
+            <button className={styles.nav_btn} onClick={showNavBar}>
                 <FaBars />
             </button>
         </header>

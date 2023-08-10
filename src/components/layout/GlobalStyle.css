@@ -3,18 +3,23 @@
     --color-primary: rgba(76, 162, 244, 1);
     --color-primary-trans: rgb(76, 162, 244, 0.5);
 
-    --color-secondary: rgb(2, 19, 35);
+    --color-secondary: rgb(2, 19, 35, 1);
+    --color-secondary-trans: rgb(2, 19, 35, 0.5);
 
     --color-thirdy: rgba(248, 78, 146, 1);
     --color-thirdy-trans: rgba(248, 78, 146, 0.5);
 
 
     --color-white: rgba(233, 233, 233, 1);
+    --color-white-trans: rgba(233, 233, 233, 0.5);
+
     --color-black1: rgba(14, 14, 14, 1);
+    --color-black1-trans: rgba(14, 14, 14, 0.25);
+
     --color-black2: rgba(41, 41, 41, 1);
 
     --color-grey: rgba(175, 175, 175, 1);
-    --color-grey-trans: rgbaa(175, 175, 175, 0.5);
+    --color-grey-trans: rgba(175, 175, 175, 0.5);
 
 
 }

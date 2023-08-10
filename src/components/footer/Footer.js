@@ -3,9 +3,11 @@ import styles from './Footer.module.css'
 function Footer() {
 
     return (
-        <section>
-            <h1>Footer</h1>
-        </section>
+        <footer className={styles.footer}>
+            <p>
+                <span className={styles.copy_right_span}>Charles Franklin Jahn</span> &copy; 2023
+            </p>
+        </footer>
     )
 }
 

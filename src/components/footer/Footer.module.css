@@ -1,0 +1,17 @@
+@import url('../layout/GlobalStyle.css');
+
+.footer {
+    background-color: var(--color-secondary);
+    padding: 1.5em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;    
+    color: var(--color-white);
+    cursor: default;
+}
+
+footer .copy_right_span {
+    color: var(--color-primary);
+}
