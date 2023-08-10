@@ -59,4 +59,12 @@ span {
 }
 
 
-@media only screen and (width <=750px) {}
+@media only screen and (width <=750px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    span {
+        font-size: 1em;
+    }
+}

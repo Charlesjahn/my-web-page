@@ -93,4 +93,11 @@ section .social {
     section .social {
         width: 350px;
     }
+    .social a {
+        height: 4.5em;
+    }
+    .social a svg {
+        font-size: 3em;
+    }
+
 }
