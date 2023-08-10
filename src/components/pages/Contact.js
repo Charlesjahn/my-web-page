@@ -31,16 +31,16 @@ function Contact() {
                 </div>
 
                 <div >
-                    <span>Call/Text me:</span>
-                    <a href='https://wa.me/353834601235' className={styles.whats}>
-                        <FaWhatsapp />
+                    <span>Mail me:</span>
+                    <a href='mailto:charles.jahn@gmail.com?subject=&body=' className={styles.gmail}>
+                        <FaEnvelope />
                     </a>
                 </div>
 
                 <div >
-                    <span>Mail me:</span>
-                    <a href='mailto:charles.jahn@gmail.com?subject=&body=' className={styles.gmail}>
-                        <FaEnvelope />
+                    <span>Call/Text me:</span>
+                    <a href='https://wa.me/353834601235' className={styles.whats}>
+                        <FaWhatsapp />
                     </a>
                 </div>
             </div>
