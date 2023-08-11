@@ -17,9 +17,9 @@ function Home() {
                     <h2 className={styles.suname}>Jahn</h2>
                 </div>
                 <p>An emerging Full Stack Developer. Enthusiastic in React, HTML, CSS, JavaScript, Python, Node.js, Java and more...</p>
-                <div className={styles.btn_div}>
 
-                    <LinkBtn to="/newProject" text="Contact" />
+                <div className={styles.btn_div}>
+                    <LinkBtn to="/contact" text="Contact" />
                 </div>
             </div>
 
