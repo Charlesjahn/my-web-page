@@ -1,5 +1,53 @@
 @import url('../layout/GlobalStyle.css');
 
-.sectionTL svg{
-color: var(--color-black1);
+.verti_timel {
+    color: var(--color-secondary);
+
+}
+
+.sectionTL svg {
+    color: var(--color-black1);
+}
+
+.verti_timel_ele h3 {
+    font-size: 2em;
+    padding: 0.1em;
+    margin: 0.1em;
+}
+
+.verti_timel_ele h5,
+p {
+    font-size: 1em;
+    padding: 0.1em;
+    margin: 0.1em;
+}
+
+.verti_timel_ele .date {
+    color: var(--color-white);
+    font-size: 1.8em;
+}
+
+
+@media only screen and (width <=1170px) {
+    .verti_timel_ele .date {
+        color: var(--color-secondary);
+    }
+}
+
+
+@media only screen and (width <=750px) {
+    .verti_timel_ele h3 {
+        font-size: 1.6em;
+    }
+
+    .verti_timel_ele h5,
+    p {
+        font-size: 1em;
+        padding: 0.1em;
+        margin: 0.1em;
+    }
+
+    .verti_timel_ele .date {
+        font-size: 1em;
+    }
 }

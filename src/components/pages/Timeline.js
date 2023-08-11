@@ -46,21 +46,22 @@ function Timeline() {
     return (
         <section className={styles.sectionTL}>
             <h1>Timeline</h1>
-            <VerticalTimeline>
+            <VerticalTimeline className={styles.verti_timel}>
                 {
                     timelineElements.reverse().map(e => {
-                        
+
                         return (
                             <VerticalTimelineElement
+                                className={styles.verti_timel_ele}
                                 key={e.key}
                                 date={e.date}
-                                dateClassName='date'
+                                dateClassName={styles.date}
                                 iconStyle={whickStyle(e.icon)}
                                 icon={whickIcon(e.icon)}
                             >
                                 <h3 className="vertical-timeline-element-title">{e.title}</h3>
                                 <h5 className="vertical-timeline-element-subtitle">{e.location}</h5>
-                                <p id="description">{e.description}</p>
+                                <p>{e.description}</p>
 
                             </VerticalTimelineElement>
                         )
