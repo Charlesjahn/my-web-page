@@ -1,0 +1,5 @@
+@import url('../layout/GlobalStyle.css');
+
+.sectionTL svg{
+color: var(--color-black1);
+}
