@@ -10,7 +10,7 @@ function Home() {
         <section className={styles.section}>
             <div className={styles.text_home}>
                 <h1>Hello World!</h1>
-                <p>I`m </p>
+                <p>I'm </p>
                 <div className={styles.full_name}>
                     <h2 className={styles.name}>Charles </h2>
                     <h2 className={styles.sename}>Franklin </h2>
