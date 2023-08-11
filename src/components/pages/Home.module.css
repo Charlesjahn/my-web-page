@@ -53,6 +53,9 @@
     margin-top: 8em;
 }
 
+.btn_div{
+    margin: 2em 0;
+}
 
 @media only screen and (width <=1069px) {
     .full_name {

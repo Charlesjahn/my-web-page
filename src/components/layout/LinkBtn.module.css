@@ -1,0 +1,21 @@
+@import url('../layout/GlobalStyle.css');
+
+.btn {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 10px var(--color-primary-trans),
+        0px 0px 20px var(--color-primary-trans),
+        0px 0px 30px var(--color-primary-trans);
+}
+
+.btn:hover {
+    color: var(--color-thirdy);
+    box-shadow: 0px 0px 10px var(--color-thirdy-trans),
+        0px 0px 20px var(--color-thirdy-trans),
+        0px 0px 30px var(--color-thirdy-trans);
+}
