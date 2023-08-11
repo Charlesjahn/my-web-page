@@ -11,7 +11,7 @@
         0px 0px 30px var(--color-thirdy-trans),
         0px 0px 40px var(--color-thirdy-trans),
         0px 0px 50px var(--color-thirdy-trans);
-        transition: 0.5s;
+    transition: 0.5s;
 }
 
 .main img:hover {
@@ -20,4 +20,20 @@
         0px 0px 30px var(--color-primary-trans),
         0px 0px 40px var(--color-primary-trans),
         0px 0px 50px var(--color-primary-trans);
+}
+
+@media only screen and (width <=1069px) {
+    .main img {
+        width: 15em;
+        height: 15em;
+    }
+}
+
+
+@media only screen and (width <=750px) {
+    .main img {
+        flex-direction: column-reverse;
+        width: 12em;
+        height: 12em;
+    }
 }

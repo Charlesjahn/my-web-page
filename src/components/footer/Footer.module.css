@@ -10,6 +10,7 @@
     width: 100%;    
     color: var(--color-white);
     cursor: default;
+    z-index: 1;
 }
 
 footer .copy_right_span {
