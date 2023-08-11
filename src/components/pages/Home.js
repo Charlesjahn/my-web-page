@@ -2,6 +2,7 @@ import styles from './Home.module.css'
 import myImg from '../../img/me_thinking.png'
 
 import Img from '../layout/Img'
+import LinkBtn from '../layout/LinkBtn'
 
 function Home() {
 
@@ -16,6 +17,10 @@ function Home() {
                     <h2 className={styles.suname}>Jahn</h2>
                 </div>
                 <p>An emerging Full Stack Developer. Enthusiastic in React, HTML, CSS, JavaScript, Python, Node.js, Java and more...</p>
+                <div className={styles.btn_div}>
+
+                    <LinkBtn to="/newProject" text="Contact" />
+                </div>
             </div>
 
             <div className={styles.img_div}>
