@@ -86,6 +86,11 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+    .text_home {
+        width: 75%;
+    
+    }
+
 }
 
 @keyframes slideLeftToRight {
