@@ -16,15 +16,19 @@
 }
 
 .verti_timel_ele h5,
-p {
+.pTime {
     font-size: 1em;
     padding: 0.1em;
     margin: 0.1em;
+
+    text-align: justify;
 }
 
 .verti_timel_ele .date {
     color: var(--color-white);
     font-size: 1.8em;
+
+    text-align: justify;
 }
 
 
@@ -41,7 +45,7 @@ p {
     }
 
     .verti_timel_ele h5,
-    p {
+    .pTime {
         font-size: 1em;
         padding: 0.1em;
         margin: 0.1em;
