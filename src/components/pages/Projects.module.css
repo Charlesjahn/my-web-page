@@ -1,0 +1,38 @@
+@import url('../layout/GlobalStyle.css');
+
+.table {
+    padding: .8em;
+    font-size: larger;
+}
+
+.table th {
+    color: var(--color-secondary);
+}
+
+.table a,
+.table p {
+    text-decoration: none;
+    color: var(--color-primary);
+    transition: 0.4s;
+}
+
+.table a:hover {
+    color: var(--color-thirdy);
+}
+
+.title_list th {
+    background-color: var(--color-white-trans);
+    padding: .25em;
+    font-size: larger;
+}
+
+.table_row td {
+    padding: .2em 1em;
+
+    background-color: var(--color-black1-trans);
+
+}
+
+.table_row td:hover {
+    box-shadow: 0 2px 4px var(--color-white-trans)
+}
