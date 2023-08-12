@@ -3,6 +3,9 @@
 .table {
     padding: .8em;
     font-size: larger;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: var(--color-black1-trans);
 }
 
 .table th {
@@ -30,15 +33,14 @@
 }
 
 .table_row td {
-    padding: .2em 1em;
-
+    padding: .5em 1em;
     background-color: var(--color-black1-trans);
 
 }
 
 .table_row:hover {
     box-shadow: 0 2px 4px var(--color-white-trans);
-    background-color: var(--color-black1);
+    background-color: var(--color-grey-trans);
 }
 
 .description_small_screen {
@@ -47,16 +49,40 @@
 
 }
 
+td[colspan="3"] {
+    visibility: hidden;
+}
+
 @media only screen and (max-width: 1069px) {
-    
+    .table {
+        border-collapse: initial;
+        border-spacing: 0 0.2em;
+        background-color: var(--color-black1-trans);
+    }
+
     .description_big_screen {
         display: none;
-    
+
     }
+
     .description_small_screen {
 
         display: block;
-    
+
+    }
+
+    td[colspan="3"] {
+        visibility: visible;
+    }
+
+    table tbody tr:nth-child(2n) {
+
+        border-spacing: 0 1em;
+
+    }
+
+    .gap {
+        visibility: hidden;
     }
 }
 

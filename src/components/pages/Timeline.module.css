@@ -31,7 +31,6 @@
     text-align: justify;
 }
 
-
 @media only screen and (max-width: 1170px) {
     .verti_timel_ele .date {
         color: var(--color-secondary);

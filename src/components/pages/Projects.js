@@ -63,24 +63,31 @@ function Projects() {
                                                 <p>{checkType(project.language)}</p>
                                             )}
                                         </td>
-                                        <td className={styles.description_big_screen}>
-                                            {project.has_pages && (
+                                        <td >
+                                            {project.has_pages ? (
                                                 <a href={`https://charlesjahn.github.io/${project.name}/`} target="_blank" rel="noopener noreferrer">
                                                     {project.name}
                                                 </a>
+                                            ) : (
+                                                <a href={project.homepage} target="_blank" rel="noopener noreferrer">
+                                                    {project.name}
+                                                </a>
                                             )}
+
                                         </td>
-                                        <td>
+                                        <td className={styles.description_big_screen}>
                                             {project.description && (
                                                 <p>{checkType(project.description)}</p>
                                             )}
                                         </td>
                                     </tr>
-                                    <tr className={styles.table_row}>
-                                        <td colspan="3" className={styles.description_small_screen}>
-                                            {project.description && (
-                                                <p>{checkType(project.description)}</p>
-                                            )}
+                                    <tr className={styles.table_row} >
+                                        <td colspan="3" >
+                                            <div className={styles.description_small_screen}>
+                                                {project.description && (
+                                                    <p>{checkType(project.description)}</p>
+                                                )}
+                                            </div>
                                         </td>
                                     </tr>
                                 </>
