@@ -57,11 +57,6 @@ span {
 }
 
 @media only screen and (width <=1069px) {
-    * {
-
-        font-family: 'Bodoni Moda', serif;
-        font-family: 'Roboto Mono', monospace;
-    }
 
     body {
         background-image: url("img/backSmall.jpg");
