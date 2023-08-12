@@ -61,7 +61,7 @@ function Timeline() {
                             >
                                 <h3 className="vertical-timeline-element-title">{e.title}</h3>
                                 <h5 className="vertical-timeline-element-subtitle">{e.location}</h5>
-                                <p>{e.description}</p>
+                                <p className={styles.pTime}>{e.description}</p>
 
                             </VerticalTimelineElement>
                         )
