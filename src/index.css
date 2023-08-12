@@ -52,8 +52,8 @@ h1 {
 
 span {
     font-size: 1.5em;
-    margin: .25em;
-    padding: .25em;
+    margin: .2em;
+    padding: .2em;
 }
 
 @media only screen and (max-width: 1069px) {
