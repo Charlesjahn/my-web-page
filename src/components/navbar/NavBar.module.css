@@ -52,7 +52,7 @@ header a:hover {
     color: var(--color-thirdy);
 }
 
-@media only screen and (width <=750px) {
+@media only screen and (max-width: 750px) {
     header button {
         display: block;
     }

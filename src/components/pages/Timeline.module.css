@@ -32,14 +32,14 @@
 }
 
 
-@media only screen and (width <=1170px) {
+@media only screen and (max-width: 1170px) {
     .verti_timel_ele .date {
         color: var(--color-secondary);
     }
 }
 
 
-@media only screen and (width <=750px) {
+@media only screen and (max-width: 750px) {
     .verti_timel_ele h3 {
         font-size: 1.6em;
     }

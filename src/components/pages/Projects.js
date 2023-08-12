@@ -45,36 +45,45 @@ function Projects() {
                             <th>Code link</th>
                             <th>Language</th>
                             <th>Page</th>
-                            <th>Description</th>
+                            <th className={styles.description_big_screen}>Description</th>
                         </tr>
                     </thead>
                     <tbody>
                         {projects.map(project => (
                             project.name.toUpperCase() !== "CHARLESJAHN" && (
-                                <tr key={project.id} className={styles.table_row}>
-                                    <td>
-                                        <a href={project.html_url} target="_blank" rel="noopener noreferrer">
-                                            {capitalizeTitle(project.name)}
-                                        </a>
-                                    </td>
-                                    <td>
-                                        {project.language && (
-                                            <p>{checkType(project.language)}</p>
-                                        )}
-                                    </td>
-                                    <td>
-                                        {project.has_pages && (
-                                            <a href={`https://charlesjahn.github.io/${project.name}/`} target="_blank" rel="noopener noreferrer">
-                                                {project.name}
+                                <>
+                                    <tr key={project.id} className={styles.table_row}>
+                                        <td>
+                                            <a href={project.html_url} target="_blank" rel="noopener noreferrer">
+                                                {capitalizeTitle(project.name)}
                                             </a>
-                                        )}
-                                    </td>
-                                    <td>
-                                        {project.description && (
-                                            <p>{checkType(project.description)}</p>
-                                        )}
-                                    </td>
-                                </tr>
+                                        </td>
+                                        <td>
+                                            {project.language && (
+                                                <p>{checkType(project.language)}</p>
+                                            )}
+                                        </td>
+                                        <td className={styles.description_big_screen}>
+                                            {project.has_pages && (
+                                                <a href={`https://charlesjahn.github.io/${project.name}/`} target="_blank" rel="noopener noreferrer">
+                                                    {project.name}
+                                                </a>
+                                            )}
+                                        </td>
+                                        <td>
+                                            {project.description && (
+                                                <p>{checkType(project.description)}</p>
+                                            )}
+                                        </td>
+                                    </tr>
+                                    <tr className={styles.table_row}>
+                                        <td colspan="3" className={styles.description_small_screen}>
+                                            {project.description && (
+                                                <p>{checkType(project.description)}</p>
+                                            )}
+                                        </td>
+                                    </tr>
+                                </>
                             )))}
                     </tbody>
                 </table>

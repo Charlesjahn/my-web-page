@@ -57,7 +57,7 @@
     margin: 2em 0;
 }
 
-@media only screen and (width <=1069px) {
+@media only screen and (max-width: 1069px) {
     .full_name {
         display: flex;
         flex-wrap: wrap;
@@ -70,7 +70,7 @@
 }
 
 
-@media only screen and (width <=750px) {
+@media only screen and (max-width: 750px) {
     .section {
         flex-direction: column-reverse;
         align-items: center;

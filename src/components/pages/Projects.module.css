@@ -40,3 +40,25 @@
     box-shadow: 0 2px 4px var(--color-white-trans);
     background-color: var(--color-black1);
 }
+
+.description_small_screen {
+
+    display: none;
+
+}
+
+@media only screen and (max-width: 1069px) {
+    
+    .description_big_screen {
+        display: none;
+    
+    }
+    .description_small_screen {
+
+        display: block;
+    
+    }
+}
+
+
+@media only screen and (max-width: 750px) {}

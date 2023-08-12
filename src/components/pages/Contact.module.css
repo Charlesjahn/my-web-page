@@ -87,14 +87,14 @@ section .social {
 }
 
 
-@media only screen and (width <=1069px) {
+@media only screen and (max-width: 1069px) {
     section .social {
         width:400px;
     }
 }
 
 
-@media only screen and (width <=750px) {
+@media only screen and (max-width: 750px) {
     section .social {
         width: 350px;
     }
