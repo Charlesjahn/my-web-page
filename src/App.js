@@ -6,7 +6,6 @@ import Footer from './components/footer/Footer'
 import Home from './components/pages/Home'
 import Contact from './components/pages/Contact'
 import Timeline from './components/pages/Timeline'
-import ProjectsV2 from './components/pages/ProjectsV2'
 import Projects from './components/pages/Projects'
 import Container from './components/layout/Container'
 
@@ -27,8 +26,6 @@ function App() {
 
             <Route path="/projects" element={<Projects />} />
             
-            <Route path="/projectsV2" element={<ProjectsV2 />} />
-
 
           </Routes>
         </Container>

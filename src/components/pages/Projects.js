@@ -1,11 +1,48 @@
+import 'react-vertical-timeline-component/style.min.css'
 import styles from './Projects.module.css'
+
+import { FaPython, FaJava, FaJs } from 'react-icons/fa'
+
+import {
+    VerticalTimeline,
+    VerticalTimelineElement
+} from 'react-vertical-timeline-component'
+
+
 
 import React, { useState } from 'react';
 
-function Projects() {
+
+function Timeline() {
 
     const [projects, setProjects] = useState([]);
     const urlGitHub = 'https://api.github.com/users/Charlesjahn/repos'
+
+    function whichStyle(type) {
+
+        const styleMap = {
+            JavaScript: { background: "#F9C74F" },
+            Python: { background: "#00BFFF" },
+            Java: { background: "#FF6347" },
+            course: { background: "#FF69B4" },
+            graduation: { background: "#00BFFF" },
+            born: { background: "#9400D3" },
+        };
+
+        return styleMap[type] || {};
+    }
+
+    function whichIcon(type) {
+        const iconMap = {
+            Python: <FaPython />,
+            JavaScript: <FaJs />,
+            Java: <FaJava />,
+        };
+
+        const IconComponent = iconMap[type] || null;
+        return IconComponent;
+    }
+
 
 
     fetch(urlGitHub, {
@@ -33,71 +70,45 @@ function Projects() {
     }
 
 
+
     return (
-        <section>
+        <section className={styles.sectionTL}>
             <h1>Projects</h1>
-            {projects.length === 0 ? (
-                <p>Loading...</p>
-            ) : (
-                <table className={styles.table}>
-                    <thead>
-                        <tr className={styles.title_list}>
-                            <th>Code link</th>
-                            <th>Language</th>
-                            <th>Page</th>
-                            <th className={styles.description_big_screen}>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {projects.map(project => (
+            <VerticalTimeline className={styles.verti_timel}>
+                {
+                    projects.map(project => {
+
+                        return (
                             project.name.toUpperCase() !== "CHARLESJAHN" && (
-                                <>
-                                    <tr key={project.id} className={styles.table_row}>
-                                        <td>
-                                            <a href={project.html_url} target="_blank" rel="noopener noreferrer">
-                                                {capitalizeTitle(project.name)}
-                                            </a>
-                                        </td>
-                                        <td>
-                                            {project.language && (
-                                                <p>{checkType(project.language)}</p>
-                                            )}
-                                        </td>
-                                        <td >
-                                            {project.has_pages ? (
-                                                <a href={`https://charlesjahn.github.io/${project.name}/`} target="_blank" rel="noopener noreferrer">
-                                                    {project.name}
-                                                </a>
-                                            ) : (
-                                                <a href={project.homepage} target="_blank" rel="noopener noreferrer">
-                                                    {project.name}
-                                                </a>
-                                            )}
+                                <VerticalTimelineElement
+                                    className={styles.verti_timel_ele_name}
+                                    key={project.id}
+                                    iconStyle={whichStyle(checkType(project.language))}
+                                    icon={whichIcon(checkType(project.language))}
+                                >
+                                    <h3>{capitalizeTitle(project.name)}</h3>
 
-                                        </td>
-                                        <td className={styles.description_big_screen}>
-                                            {project.description && (
-                                                <p>{checkType(project.description)}</p>
-                                            )}
-                                        </td>
-                                    </tr>
-                                    <tr className={styles.table_row} >
-                                        <td colspan="3" >
-                                            <div className={styles.description_small_screen}>
-                                                {project.description && (
-                                                    <p>{checkType(project.description)}</p>
-                                                )}
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </>
-                            )))}
-                    </tbody>
-                </table>
+                                    <p className={styles.pTime}>{project.description}</p>
+                                    <a href={project.html_url} target="_blank" rel="noopener noreferrer">Code</a>
 
-            )}
+                                    {project.has_pages ? (
+                                        <a href={`https://charlesjahn.github.io/${project.name}/`} target="_blank" rel="noopener noreferrer">
+                                            Check it
+                                        </a>
+                                    ) : (
+                                        <a href={project.homepage} target="_blank" rel="noopener noreferrer">
+                                            Check it
+                                        </a>
+                                    )}
+                                </VerticalTimelineElement>
+                            ))
+
+                    })
+                }
+
+            </VerticalTimeline>
         </section>
     )
 }
 
-export default Projects
+export default Timeline

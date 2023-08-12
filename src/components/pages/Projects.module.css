@@ -1,90 +1,37 @@
-@import url('../layout/GlobalStyle.css');
+@import url('../../components/layout/GlobalStyle.css');
 
-.table {
-    padding: .8em;
-    font-size: larger;
-    border-collapse: separate;
-    border-spacing: 0;
-    background-color: var(--color-black1-trans);
-}
-
-.table th {
+.verti_timel p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
     color: var(--color-secondary);
 }
 
-.table a,
-.table p {
-    text-decoration: none;
+.verti_timel h3 {
+    font-size: 1.8em;
+    color: var(--color-secondary);
+}
+
+.verti_timel svg {
+    color: var(--color-black1);
+}
+
+.verti_timel a{
     color: var(--color-primary);
+    text-decoration: none;
+    background-color: var(--color-secondary);
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
     transition: 0.4s;
-    display: block;
-    width: 100%;
-    height: 100%;
+    box-shadow: 0px 0px 10px var(--color-primary-trans),
+        0px 0px 20px var(--color-primary-trans),
+        0px 0px 30px var(--color-primary-trans);
 }
 
-.table a:hover {
+.verti_timel a:hover{
     color: var(--color-thirdy);
+    
+    box-shadow: 0px 0px 10px var(--color-thirdy-trans),
+        0px 0px 20px var(--color-thirdy-trans),
+        0px 0px 30px var(--color-thirdy-trans);
 }
-
-.title_list th {
-    background-color: var(--color-white-trans);
-    padding: .25em;
-    font-size: larger;
-}
-
-.table_row td {
-    padding: .5em 1em;
-    background-color: var(--color-black1-trans);
-
-}
-
-.table_row:hover {
-    box-shadow: 0 2px 4px var(--color-white-trans);
-    background-color: var(--color-grey-trans);
-}
-
-.description_small_screen {
-
-    display: none;
-
-}
-
-td[colspan="3"] {
-    visibility: hidden;
-}
-
-@media only screen and (max-width: 1069px) {
-    .table {
-        border-collapse: initial;
-        border-spacing: 0 0.2em;
-        background-color: var(--color-black1-trans);
-    }
-
-    .description_big_screen {
-        display: none;
-
-    }
-
-    .description_small_screen {
-
-        display: block;
-
-    }
-
-    td[colspan="3"] {
-        visibility: visible;
-    }
-
-    table tbody tr:nth-child(2n) {
-
-        border-spacing: 0 1em;
-
-    }
-
-    .gap {
-        visibility: hidden;
-    }
-}
-
-
-@media only screen and (max-width: 750px) {}
