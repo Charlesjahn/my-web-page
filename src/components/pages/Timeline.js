@@ -10,9 +10,13 @@ import {
     VerticalTimelineElement
 } from 'react-vertical-timeline-component'
 
+import { useState } from 'react'
 
 
 function Timeline() {
+    const timelineReverse = timelineElements.reverse()
+    const [selectedOption, setSelectedOption] = useState('everything');
+
     function whickStyle(type) {
 
         const styleMap = {
@@ -40,16 +44,30 @@ function Timeline() {
 
         return IconComponent;
     }
-
+    const handleOptionChange = (event) => {
+        setSelectedOption(event.target.value);
+    };
 
 
     return (
         <section className={styles.sectionTL}>
             <h1>Timeline</h1>
+            <div className={styles.select} >
+                <label>Select Option:</label>
+                <select value={selectedOption} onChange={handleOptionChange}>
+                    <option value="everything">All</option>
+                    <option value="profession">Profession</option>
+                    <option value="education">Education</option>
+                </select>
+            </div>
             <VerticalTimeline className={styles.verti_timel}>
-                {
-                    timelineElements.reverse().map(e => {
+                {timelineReverse.map(e => {
+                    const shouldRender =
+                        selectedOption === "everything" ||
+                        (selectedOption === "profession" && e.type === "profession") ||
+                        (selectedOption === "education" && e.type === "education");
 
+                    if (shouldRender) {
                         return (
                             <VerticalTimelineElement
                                 className={styles.verti_timel_ele}
@@ -60,15 +78,13 @@ function Timeline() {
                                 icon={whickIcon(e.icon)}
                             >
                                 <h3>{e.title}</h3>
-                                <h5>{e.location}</h5>
+                                <h5>{e.id}: {e.location}</h5>
                                 <p className={styles.pTime}>{e.description}</p>
-
                             </VerticalTimelineElement>
-                        )
-
-                    })
-                }
-
+                        );
+                    }
+                    return null;
+                })}
             </VerticalTimeline>
         </section>
     )
