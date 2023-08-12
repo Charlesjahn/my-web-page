@@ -45,6 +45,7 @@ function Projects() {
                             <th>Code link</th>
                             <th>Language</th>
                             <th>Page</th>
+                            <th>Description</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -66,6 +67,11 @@ function Projects() {
                                             <a href={`https://charlesjahn.github.io/${project.name}/`} target="_blank" rel="noopener noreferrer">
                                                 {project.name}
                                             </a>
+                                        )}
+                                    </td>
+                                    <td>
+                                        {project.description && (
+                                            <p>{checkType(project.description)}</p>
                                         )}
                                     </td>
                                 </tr>
