@@ -26,7 +26,6 @@ function Timeline() {
             java: { background: "#FF6347" },
             react: { background: "#00BFFF" },
         };
-        console.log(type)
         return styleMap[type] || {};
     }
 
@@ -37,9 +36,7 @@ function Timeline() {
             java: <FaJava />,
             react: <FaReact />,
         };
-
-        const IconComponent = iconMap[type] || null;
-        return IconComponent;
+        return iconMap[type] || null;
     }
 
 
