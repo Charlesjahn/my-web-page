@@ -36,6 +36,7 @@
 
 }
 
-.table_row td:hover {
-    box-shadow: 0 2px 4px var(--color-white-trans)
+.table_row:hover {
+    box-shadow: 0 2px 4px var(--color-white-trans);
+    background-color: var(--color-black1);
 }
