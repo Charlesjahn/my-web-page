@@ -1,7 +1,7 @@
 import 'react-vertical-timeline-component/style.min.css'
 import styles from './Projects.module.css'
 
-import { FaPython, FaJava, FaJs } from 'react-icons/fa'
+import { FaPython, FaJava, FaJs, FaReact } from 'react-icons/fa'
 
 import {
     VerticalTimeline,
@@ -10,7 +10,7 @@ import {
 
 
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 function Timeline() {
@@ -21,22 +21,21 @@ function Timeline() {
     function whichStyle(type) {
 
         const styleMap = {
-            JavaScript: { background: "#F9C74F" },
-            Python: { background: "#00BFFF" },
-            Java: { background: "#FF6347" },
-            course: { background: "#FF69B4" },
-            graduation: { background: "#00BFFF" },
-            born: { background: "#9400D3" },
+            javascript: { background: "#F9C74F" },
+            python: { background: "#00FF00" },
+            java: { background: "#FF6347" },
+            react: { background: "#00BFFF" },
         };
-
+        console.log(type)
         return styleMap[type] || {};
     }
 
     function whichIcon(type) {
         const iconMap = {
-            Python: <FaPython />,
-            JavaScript: <FaJs />,
-            Java: <FaJava />,
+            python: <FaPython />,
+            javascript: <FaJs />,
+            java: <FaJava />,
+            react: <FaReact />,
         };
 
         const IconComponent = iconMap[type] || null;
@@ -44,26 +43,17 @@ function Timeline() {
     }
 
 
-
-    fetch(urlGitHub, {
-        method: 'GET'
-    })
+    useEffect(() => {
+        fetch(urlGitHub, {
+            method: 'GET'
+        })
         .then((reponse) => reponse.json())
         .then(data => setProjects(data))
         .catch((err) => {
             console.log(err)
         })
+    }, [])
 
-    function checkType(type) {
-        const typeLang = {
-            CSS: "JavaScript",
-            HTML: "JavaScript",
-        };
-
-        const languageType = typeLang[type] || type;
-
-        return languageType;
-    }
 
     function capitalizeTitle(title) {
         return title.replace(/(?:^|\s)\w/g, firstLetter => firstLetter.toUpperCase());
@@ -78,13 +68,15 @@ function Timeline() {
                 {
                     projects.map(project => {
 
+                        const typeLanguase = project.topics[0]?.toLowerCase();
+
                         return (
                             project.name.toUpperCase() !== "CHARLESJAHN" && (
                                 <VerticalTimelineElement
                                     className={styles.verti_timel_ele_name}
                                     key={project.id}
-                                    iconStyle={whichStyle(checkType(project.language))}
-                                    icon={whichIcon(checkType(project.language))}
+                                    iconStyle={whichStyle(typeLanguase)}
+                                    icon={whichIcon(typeLanguase)}
                                 >
                                     <h3>{capitalizeTitle(project.name)}</h3>
 
