@@ -1,6 +1,6 @@
 import styles from './Projects.module.css'
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function Projects() {
 

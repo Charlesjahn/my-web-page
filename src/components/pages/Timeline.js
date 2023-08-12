@@ -59,8 +59,8 @@ function Timeline() {
                                 iconStyle={whickStyle(e.icon)}
                                 icon={whickIcon(e.icon)}
                             >
-                                <h3 className="vertical-timeline-element-title">{e.title}</h3>
-                                <h5 className="vertical-timeline-element-subtitle">{e.location}</h5>
+                                <h3>{e.title}</h3>
+                                <h5>{e.location}</h5>
                                 <p className={styles.pTime}>{e.description}</p>
 
                             </VerticalTimelineElement>
