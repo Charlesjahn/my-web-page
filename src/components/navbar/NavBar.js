@@ -33,6 +33,7 @@ function NavBar() {
                 <Link to="/projects" onClick={closeNavBar}>Projects</Link>
                 <Link to="/contact" onClick={closeNavBar}>Contact</Link>
                 <Link to="/timeline" onClick={closeNavBar}>Timeline</Link>
+                <Link to="/skills" onClick={closeNavBar}>Skills</Link>
 
             </nav>
 

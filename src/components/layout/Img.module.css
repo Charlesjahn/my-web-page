@@ -33,7 +33,7 @@
 @media only screen and (max-width: 750px) {
     .main img {
         flex-direction: column-reverse;
-        width: 12em;
-        height: 12em;
+        width: 10em;
+        height: 10em;
     }
 }

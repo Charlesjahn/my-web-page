@@ -71,6 +71,12 @@
 
 
 @media only screen and (max-width: 750px) {
+
+    .text_home * {
+        margin: 0;
+        padding: 0;
+    }
+
     .section {
         flex-direction: column-reverse;
         align-items: center;
@@ -78,7 +84,7 @@
     }
 
     .img_div {
-        margin-top: 1em;
+        margin-top: 0;
     }
 
     .full_name {
@@ -89,7 +95,16 @@
 
     .text_home {
         width: 85%;
+    }
 
+    .btn_div {
+        margin: 2em 0;
+    }
+
+    .name,
+    .sename,
+    .suname {
+        padding: 0 0.5em;
     }
 
 }

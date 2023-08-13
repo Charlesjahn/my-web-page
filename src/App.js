@@ -8,6 +8,7 @@ import Contact from './components/pages/Contact'
 import Timeline from './components/pages/Timeline'
 import Projects from './components/pages/Projects'
 import Container from './components/layout/Container'
+import Skills from './components/pages/Skills'
 
 function App() {
   return (
@@ -23,9 +24,9 @@ function App() {
 
             <Route path="/contact" element={<Contact />} />
 
-
             <Route path="/projects" element={<Projects />} />
             
+            <Route path="/skills" element={<Skills />} />
 
           </Routes>
         </Container>

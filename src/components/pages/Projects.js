@@ -78,6 +78,7 @@ function Timeline() {
                                     <h3>{capitalizeTitle(project.name)}</h3>
 
                                     <p className={styles.pTime}>{project.description}</p>
+                                    
                                     <a href={project.html_url} target="_blank" rel="noopener noreferrer">Code</a>
 
                                     {project.has_pages ? (

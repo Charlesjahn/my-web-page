@@ -129,7 +129,7 @@ let timeline = [
         id: 15,
         title: "Bicycle Mechanic",
         location: "Life in Motion Bike Shop - Dublin",
-        description: "I provided excellent customer service by ensuring proper bike maintenance, fit, and safety. During the first year, I introduced the Trello system to the owner, which led to improved visualization of our services, minimized delays, and a reduction in the number of complaints.",
+        description: "Provide excellent customer service by ensuring proper bike maintenance, fit, and safety. During the first year. Introduce and implement Trello, which improved visualisation of our services, making it more efficient and bringing higher customer satisfaction.",
         date: "May 2020 - June 2021",
         icon: "work",
         type: "profession"
@@ -156,7 +156,7 @@ let timeline = [
         id: 18,
         title: "Mentor",
         location: "CCT College Dublin",
-        description: "Helping fisrt year students in tasks of Java, JavaScript, HTML, CSS and Maths",
+        description: "Helpe fisrt year students in tasks of Java, JavaScript, HTML, CSS and Maths",
         date: "September 2021 - Present",
         icon: "work",
         type: "profession"

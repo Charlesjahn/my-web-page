@@ -15,6 +15,7 @@ import { useState } from 'react'
 
 function Timeline() {
     const timelineReverse = timelineElements.reverse()
+    
     const [selectedOption, setSelectedOption] = useState('everything');
 
     function whickStyle(type) {
