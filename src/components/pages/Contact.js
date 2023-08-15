@@ -17,7 +17,7 @@ function Contact() {
                 </div>
 
                 <div >
-                    <span>Linkedin</span>
+                    <span>LinkedIn</span>
                     <a href='https://www.linkedin.com/in/charles-franklin-jahn/' className={styles.link} target="_blank" rel="noopener noreferrer">
                         <FaLinkedin />
                     </a>
@@ -31,14 +31,14 @@ function Contact() {
                 </div>
 
                 <div >
-                    <span>Mail me:</span>
+                    <span>E-mail</span>
                     <a href='mailto:charles.jahn@gmail.com?subject=&body=' className={styles.gmail}>
                         <FaEnvelope />
                     </a>
                 </div>
 
                 <div >
-                    <span>Call/Text me:</span>
+                    <span>WhatsApp</span>
                     <a href='https://wa.me/353834601235' className={styles.whats} target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp />
                     </a>
