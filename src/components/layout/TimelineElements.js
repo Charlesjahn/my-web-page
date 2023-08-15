@@ -156,7 +156,7 @@ let timeline = [
         id: 18,
         title: "Mentor",
         location: "CCT College Dublin",
-        description: "Helpe fisrt year students in tasks of Java, JavaScript, HTML, CSS and Maths",
+        description: "Helped first-year students with tasks, studies, and the fundamentals of Java, JavaScript, HTML, CSS, and Math.",
         date: "September 2021 - Present",
         icon: "work",
         type: "profession"
