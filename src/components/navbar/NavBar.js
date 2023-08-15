@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 import styles from './NavBar.module.css'
 
-import imgLogo from '../../img/logomini_trans.png'
+import imgLogo from '../../img/logo/logomini_trans.png'
 
 function NavBar() {
 
