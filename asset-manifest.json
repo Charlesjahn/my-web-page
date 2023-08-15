@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-web-page/static/css/main.950ecc92.css",
-    "main.js": "/my-web-page/static/js/main.1cefecba.js",
+    "main.css": "/my-web-page/static/css/main.ba9d2d5f.css",
+    "main.js": "/my-web-page/static/js/main.f20529d5.js",
     "static/media/me_thinking.png": "/my-web-page/static/media/me_thinking.1d670333d55e52a698e6.png",
     "static/media/connectfour.png": "/my-web-page/static/media/connectfour.838387118b62a0c6e979.png",
     "static/media/tic_tac_toe.png": "/my-web-page/static/media/tic_tac_toe.8e3886d6c6ab5d65d46e.png",
@@ -13,11 +13,11 @@
     "static/media/doggy.png": "/my-web-page/static/media/doggy.320ddbd8d7e69d955666.png",
     "static/media/logomini_trans.png": "/my-web-page/static/media/logomini_trans.ca8e9dee53696ae46b5f.png",
     "index.html": "/my-web-page/index.html",
-    "main.950ecc92.css.map": "/my-web-page/static/css/main.950ecc92.css.map",
-    "main.1cefecba.js.map": "/my-web-page/static/js/main.1cefecba.js.map"
+    "main.ba9d2d5f.css.map": "/my-web-page/static/css/main.ba9d2d5f.css.map",
+    "main.f20529d5.js.map": "/my-web-page/static/js/main.f20529d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.950ecc92.css",
-    "static/js/main.1cefecba.js"
+    "static/css/main.ba9d2d5f.css",
+    "static/js/main.f20529d5.js"
   ]
 }
