@@ -30,10 +30,11 @@ function NavBar() {
                 <button className={styles.closeBtn} onClick={showNavBar}>
                     <FaTimes />
                 </button>
+                <Link to="/my-web-page" onClick={closeNavBar}>Home</Link>
+                <Link to="/timeline" onClick={closeNavBar}>My Trajectory</Link>
                 <Link to="/projects" onClick={closeNavBar}>Projects</Link>
-                <Link to="/contact" onClick={closeNavBar}>Contact</Link>
-                <Link to="/timeline" onClick={closeNavBar}>Timeline</Link>
                 <Link to="/skills" onClick={closeNavBar}>Skills</Link>
+                <Link to="/contact" onClick={closeNavBar}>Contact</Link>
 
             </nav>
 
