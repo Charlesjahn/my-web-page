@@ -31,7 +31,7 @@
 }
 
 .text_home h2:hover {
-    color: var(--color-thirdy);
+    color: var(--color-primary);
 }
 
 .name {

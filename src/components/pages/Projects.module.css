@@ -1,45 +1,71 @@
 @import url('../../components/layout/GlobalStyle.css');
 
-.verti_timel p {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    color: var(--color-secondary);
-}
-
-.verti_timel h3 {
+.div_projects h3 {
     font-size: 1.8em;
-    color: var(--color-secondary);
 }
 
-.verti_timel svg {
-    color: var(--color-black1);
+.div_projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.verti_timel a{
-    color: var(--color-primary);
+.div_projects img {
+    width: 13em;
+    height: 13em;
+}
+
+.div_projects p {
+    width: 12em;
+    height: 7em;
+    text-align: justify;
+}
+
+.project {
+    margin: 0.5em;
+    padding: 1em;
+    
+    box-shadow: 0px 4px 4px var(--color-white);
+}
+.project:hover{    
+    box-shadow: 0px 4px 4px var(--color-primary-trans);
+}
+
+.project .iconspan {
+    margin: 0 0.2em;
+    padding: 0;
+    font-size: 1em;
+}
+
+
+.project a {
+    color: var(--color-white);
     text-decoration: none;
     background-color: var(--color-secondary);
-    margin: 1em;
-    padding: 0.5em;
+    padding: 0 0.5em;
     border-radius: 1em;
     transition: 0.4s;
-    box-shadow: 0px 0px 10px var(--color-primary-trans),
-        0px 0px 20px var(--color-primary-trans),
-        0px 0px 30px var(--color-primary-trans);
+    box-shadow: 0px 0px 10px var(--color-white-trans),
+        0px 0px 20px var(--color-white-trans);
 }
 
-.verti_timel a:hover{
-    color: var(--color-thirdy);
-    
-    box-shadow: 0px 0px 10px var(--color-thirdy-trans),
-        0px 0px 20px var(--color-thirdy-trans),
-        0px 0px 30px var(--color-thirdy-trans);
+.project a:hover {
+    color: var(--color-primary-trans);
+
+    box-shadow: 0px 0px 10px var(--color-primary-trans-trans),
+        0px 0px 20px var(--color-primary-trans-trans);
+}
+
+.divbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1em;
 }
 
 
-@media only screen and (max-width: 1170px) {
-    
-}
+@media only screen and (max-width: 1170px) {}
 
 
 @media only screen and (max-width: 750px) {
@@ -49,11 +75,12 @@
         color: var(--color-secondary);
         margin-top: 0.5em;
     }
+
     .verti_timel h3 {
         font-size: 1.5em;
     }
 
-    .verti_timel a{
+    .verti_timel a {
         margin: 1em;
         padding: 0.5em;
         font-size: small;

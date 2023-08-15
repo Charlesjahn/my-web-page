@@ -19,7 +19,7 @@ header {
 }
 
 header button {
-    color: var(--color-primary);
+    color: var(--color-white);
     background-color: transparent;
     margin: 0;
     padding: 0;
@@ -33,12 +33,12 @@ header button {
 }
 
 header button:hover {
-    color: var(--color-thirdy);
+    color: var(--color-primary);
 }
 
 header a {
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--color-white);
     margin: 0 2em;
     transition: 0.5s;
     font-size: large;
@@ -49,7 +49,7 @@ header svg {
 }
 
 header a:hover {
-    color: var(--color-thirdy);
+    color: var(--color-primary);
 }
 
 @media only screen and (max-width: 750px) {
