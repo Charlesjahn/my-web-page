@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState  } from 'react'
 
 import { FaBars, FaTimes } from 'react-icons/fa'
 
@@ -34,7 +34,6 @@ function NavBar() {
                 <Link to="/timeline" onClick={closeNavBar}>My Trajectory</Link>
                 <Link to="/projects" onClick={closeNavBar}>Projects</Link>
                 <Link to="/skills" onClick={closeNavBar}>Skills</Link>
-                <Link to="/contact" onClick={closeNavBar}>Contact</Link>
 
             </nav>
 
