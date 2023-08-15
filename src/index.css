@@ -56,6 +56,12 @@ span {
     padding: .2em;
 }
 
+section{
+    color: var(--color-grey);
+    justify-content: center;
+    text-align: center;
+}
+
 @media only screen and (max-width: 1069px) {
 
     body {
