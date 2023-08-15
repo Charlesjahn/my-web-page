@@ -1,5 +1,5 @@
 import styles from './Home.module.css'
-import myImg from '../../img/me_thinking.png'
+import myImg from '../../img/me/me_thinking.png'
 
 import Img from '../layout/Img'
 
