@@ -3,30 +3,36 @@ import styles from './Projects.module.css'
 
 import { FaPython, FaJava, FaJs, FaReact } from 'react-icons/fa'
 
-import {
-    VerticalTimeline,
-    VerticalTimelineElement
-} from 'react-vertical-timeline-component'
-
-
-
 import React, { useState, useEffect } from 'react';
 
-
 function Timeline() {
-
     const [projects, setProjects] = useState([]);
     const urlGitHub = 'https://api.github.com/users/Charlesjahn/repos'
+
+    useEffect(() => {
+        fetch(urlGitHub, {
+            method: 'GET'
+        })
+            .then((reponse) => reponse.json())
+            .then(data => setProjects(data))
+            .catch((err) => {
+                console.log(err)
+            })
+    }, [])
 
     function whichStyle(type) {
 
         const styleMap = {
-            javascript: { background: "#F9C74F" },
-            python: { background: "#00FF00" },
-            java: { background: "#FF6347" },
-            react: { background: "#00BFFF" },
+            javascript: { color: "#F9C74F" },
+            python: { color: "#00FF00" },
+            java: { color: "#FF6347" },
+            react: { color: "#00BFFF" },
         };
         return styleMap[type] || {};
+    }
+
+    function capitalizeTitle(title) {
+        return title.replace(/(?:^|\s)\w/g, firstLetter => firstLetter.toUpperCase());
     }
 
     function whichIcon(type) {
@@ -39,64 +45,60 @@ function Timeline() {
         return iconMap[type] || null;
     }
 
-
-    useEffect(() => {
-        fetch(urlGitHub, {
-            method: 'GET'
-        })
-        .then((reponse) => reponse.json())
-        .then(data => setProjects(data))
-        .catch((err) => {
-            console.log(err)
-        })
-    }, [])
-
-
-    function capitalizeTitle(title) {
-        return title.replace(/(?:^|\s)\w/g, firstLetter => firstLetter.toUpperCase());
+    function importAll(r) {
+        let images = {};
+        r.keys().forEach((item) => {
+            images[item.replace('./', '')] = r(item);
+        });
+        return images;
     }
 
+    const images = importAll(require.context('../../img/projects', false, /\.(png|jpe?g|svg)$/));
 
+    function whichImg(name) {
+        return images[`${name.toLowerCase()}.png`] || null;
+    }
 
     return (
         <section className={styles.sectionTL}>
             <h1>Projects</h1>
-            <VerticalTimeline className={styles.verti_timel}>
-                {
-                    projects.map(project => {
 
-                        const typeLanguase = project.topics[0]?.toLowerCase();
+            <div className={styles.div_projects}>
+                {
+                    projects.map(p => {
+
+                        const typeLanguase = p.topics[0]?.toLowerCase();
 
                         return (
-                            project.name.toUpperCase() !== "CHARLESJAHN" && (
-                                <VerticalTimelineElement
-                                    className={styles.verti_timel_ele_name}
-                                    key={project.id}
-                                    iconStyle={whichStyle(typeLanguase)}
-                                    icon={whichIcon(typeLanguase)}
-                                >
-                                    <h3>{capitalizeTitle(project.name)}</h3>
-
-                                    <p className={styles.pTime}>{project.description}</p>
+                            p.name.toUpperCase() !== "CHARLESJAHN" && (
+                                <div className={styles.project}>
                                     
-                                    <a href={project.html_url} target="_blank" rel="noopener noreferrer">Code</a>
+                                    <h3>
+                                        {capitalizeTitle(p.name)} 
+                                        <span className={styles.iconspan} style={whichStyle(typeLanguase)} >{whichIcon(typeLanguase)}</span>
+                                        </h3>
+                                    <p>{p.description}</p>
 
-                                    {project.has_pages ? (
-                                        <a href={`https://charlesjahn.github.io/${project.name}/`} target="_blank" rel="noopener noreferrer">
-                                            Check it
-                                        </a>
-                                    ) : (
-                                        <a href={project.homepage} target="_blank" rel="noopener noreferrer">
-                                            Check it
-                                        </a>
-                                    )}
-                                </VerticalTimelineElement>
-                            ))
+                                    {whichImg(p.name) && <img src={whichImg(p.name)} alt={p.name} />}
 
+                                    <div className={styles.divbtn}>
+                                        <a href={p.html_url} target="_blank" rel="noopener noreferrer">Code</a>
+                                        {p.has_pages ? (
+                                            <a href={`https://charlesjahn.github.io/${p.name}/`} target="_blank" rel="noopener noreferrer">
+                                                Check it
+                                            </a>
+                                        ) : (
+                                            <a href={p.homepage} target="_blank" rel="noopener noreferrer">
+                                                Check it
+                                            </a>
+                                        )}
+                                    </div>
+                                </div>
+                            )
+                        )
                     })
                 }
-
-            </VerticalTimeline>
+            </div>
         </section>
     )
 }
