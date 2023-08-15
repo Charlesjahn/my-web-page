@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/my-web-page/static/css/main.c149bc57.css",
-    "main.js": "/my-web-page/static/js/main.060997f5.js",
+    "main.css": "/my-web-page/static/css/main.950ecc92.css",
+    "main.js": "/my-web-page/static/js/main.aaadd443.js",
     "static/media/me_thinking.png": "/my-web-page/static/media/me_thinking.1d670333d55e52a698e6.png",
-    "static/media/back.jpg": "/my-web-page/static/media/back.abb3d170674927103d51.jpg",
-    "static/media/backSmall.jpg": "/my-web-page/static/media/backSmall.cf1a8d07fb56e761f1db.jpg",
+    "static/media/connectfour.png": "/my-web-page/static/media/connectfour.f03873eab5c76e6d0014.png",
+    "static/media/tic_tac_toe.png": "/my-web-page/static/media/tic_tac_toe.b233d2b5630c28accc65.png",
+    "static/media/sorting.png": "/my-web-page/static/media/sorting.d56b9614ecfbb8af740d.png",
+    "static/media/calculator.png": "/my-web-page/static/media/calculator.78977fa7eac0fae95bd8.png",
+    "static/media/pong.png": "/my-web-page/static/media/pong.b3f2025cef07fffc9e4a.png",
+    "static/media/cost_app.png": "/my-web-page/static/media/cost_app.4fb6c1349c78e76f14d3.png",
+    "static/media/snake.png": "/my-web-page/static/media/snake.12b7c4858e3ca50b87d8.png",
     "static/media/logomini_trans.png": "/my-web-page/static/media/logomini_trans.ca8e9dee53696ae46b5f.png",
+    "static/media/doggy.png": "/my-web-page/static/media/doggy.a8a3d597fa16fe2d79f1.png",
     "index.html": "/my-web-page/index.html",
-    "main.c149bc57.css.map": "/my-web-page/static/css/main.c149bc57.css.map",
-    "main.060997f5.js.map": "/my-web-page/static/js/main.060997f5.js.map"
+    "main.950ecc92.css.map": "/my-web-page/static/css/main.950ecc92.css.map",
+    "main.aaadd443.js.map": "/my-web-page/static/js/main.aaadd443.js.map"
   },
   "entrypoints": [
-    "static/css/main.c149bc57.css",
-    "static/js/main.060997f5.js"
+    "static/css/main.950ecc92.css",
+    "static/js/main.aaadd443.js"
   ]
 }
