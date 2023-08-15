@@ -53,10 +53,6 @@
     margin-top: 8em;
 }
 
-.btn_div {
-    margin: 2em 0;
-}
-
 @media only screen and (max-width: 1069px) {
     .full_name {
         display: flex;
@@ -95,10 +91,6 @@
 
     .text_home {
         width: 85%;
-    }
-
-    .btn_div {
-        margin: 2em 0;
     }
 
     .name,
