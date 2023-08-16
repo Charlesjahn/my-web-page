@@ -57,7 +57,7 @@ span {
 }
 
 section{
-    color: var(--color-grey);
+    color: var(--color-white);
     justify-content: center;
     text-align: center;
 }

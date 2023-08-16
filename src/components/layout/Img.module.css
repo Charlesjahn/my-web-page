@@ -5,7 +5,6 @@
     width: 18em;
     height: 18em;
     border-radius: 50%;
-    /* background-color: var(--color-white-trans); */
     box-shadow: 0px 0px 10px var(--color-secondary-trans),
         0px 0px 20px var(--color-secondary-trans),
         0px 0px 30px var(--color-secondary-trans);
