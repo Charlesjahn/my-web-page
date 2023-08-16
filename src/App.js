@@ -8,7 +8,6 @@ import Home from './components/pages/Home'
 import Timeline from './components/pages/Timeline'
 import Projects from './components/pages/Projects'
 import Container from './components/layout/Container'
-import Skills from './components/pages/Skills'
 
 function App() {
 
@@ -25,8 +24,6 @@ function App() {
             <Route path="/timeline" element={<Timeline />} />
 
             <Route path="/projects" element={<Projects />} />
-            
-            <Route path="/skills" element={<Skills />} />
 
           </Routes>
         </Container>

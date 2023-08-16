@@ -15,8 +15,8 @@ import { useState } from 'react'
 
 function Timeline() {
     const timelineReverse = timelineElements.reverse()
-    
-    const [selectedOption, setSelectedOption] = useState('everything');
+
+    const [selectedOption, setSelectedOption] = useState('tech');
 
     function whickStyle(type) {
 
@@ -56,17 +56,19 @@ function Timeline() {
             <div className={styles.select} >
                 <label>Select Option:</label>
                 <select value={selectedOption} onChange={handleOptionChange}>
-                    <option value="everything">All</option>
+                    <option value="tech">I.T.</option>
                     <option value="profession">Profession</option>
                     <option value="education">Education</option>
+                    <option value="everything">All</option>
                 </select>
             </div>
             <VerticalTimeline className={styles.verti_timel}>
                 {timelineReverse.map(e => {
                     const shouldRender =
-                        selectedOption === "everything" ||
+                        (selectedOption === "tech" && e.type === "tech") ||
                         (selectedOption === "profession" && e.type === "profession") ||
-                        (selectedOption === "education" && e.type === "education");
+                        (selectedOption === "education" && e.type === "education") ||
+                        selectedOption === "everything";
 
                     if (shouldRender) {
                         return (

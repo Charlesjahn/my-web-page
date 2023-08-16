@@ -24,7 +24,7 @@ let timeline = [
         description: "Through this comprehensive course, I gained hands-on experience and a deep understanding of the fundamental concepts, techniques, and tools used in both AutoCAD and SolidWorks. Proficient in producing accurate 2D and 3D technical drawings and models using AutoCAD and SolidWorks, with a strong grasp of drafting standards, dimensioning, and annotation practices. ",
         date: "January 2011",
         icon: "course",
-        type: "tech"
+        type: "education"
     },
     {
         id: 4,
