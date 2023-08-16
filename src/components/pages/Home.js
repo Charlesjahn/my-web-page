@@ -20,7 +20,7 @@ function Home() {
                 </div>
                 <p>Originally from Brazil and currently based in Ireland for the past 5 years. I'm a hardworking and dedicated individual committed to achieving my goals and building a successful future.</p>
 
-                <p>I'm an aspiring Full Stack Developer, eager to expand and refine my skillset. My passion lies in creating dynamic web experiences using technologies like React, HTML, CSS, and JavaScript. I'm also proficient in Python, Node.js, Java, and more, always excited to delve into new languages and frameworks to broaden my expertise.</p>
+                <p>I'm an aspiring Full Stack Developer, eager to expand and refine my skillset. Using technologies like React, HTML, CSS, and JavaScript. I'm also proficient in Python, Node.js, Java, SpringBoots, and more, always excited to delve into new languages and frameworks to broaden my expertise.</p>
 
             </div>
 
