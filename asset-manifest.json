@@ -1,23 +1,21 @@
 {
   "files": {
-    "main.css": "/my-web-page/static/css/main.ba9d2d5f.css",
-    "main.js": "/my-web-page/static/js/main.f20529d5.js",
+    "main.css": "/my-web-page/static/css/main.1b103d7f.css",
+    "main.js": "/my-web-page/static/js/main.83c3b7b1.js",
     "static/media/me_thinking.png": "/my-web-page/static/media/me_thinking.1d670333d55e52a698e6.png",
-    "static/media/connectfour.png": "/my-web-page/static/media/connectfour.838387118b62a0c6e979.png",
-    "static/media/tic_tac_toe.png": "/my-web-page/static/media/tic_tac_toe.8e3886d6c6ab5d65d46e.png",
-    "static/media/sorting.png": "/my-web-page/static/media/sorting.9b7302bf5571748cf331.png",
-    "static/media/calculator.png": "/my-web-page/static/media/calculator.a62bcc0949404f0693f6.png",
-    "static/media/pong.png": "/my-web-page/static/media/pong.c18ba1df7a36a125681a.png",
-    "static/media/cost_app.png": "/my-web-page/static/media/cost_app.4fb6c1349c78e76f14d3.png",
-    "static/media/snake.png": "/my-web-page/static/media/snake.0db01cba7a48922bc428.png",
-    "static/media/doggy.png": "/my-web-page/static/media/doggy.320ddbd8d7e69d955666.png",
+    "static/media/back.jpg": "/my-web-page/static/media/back.e4ccb8283fcf64e195d1.jpg",
+    "static/media/smallback.jpg": "/my-web-page/static/media/smallback.712c62d60d725055e933.jpg",
+    "static/media/connectfour.png": "/my-web-page/static/media/connectfour.768ee75bc6e90943898a.png",
+    "static/media/tic_tac_toe.png": "/my-web-page/static/media/tic_tac_toe.d8f0dd3d01f8418ab7dc.png",
+    "static/media/sorting.png": "/my-web-page/static/media/sorting.b21dea3283d01cf7c85e.png",
     "static/media/logomini_trans.png": "/my-web-page/static/media/logomini_trans.ca8e9dee53696ae46b5f.png",
+    "static/media/pong.png": "/my-web-page/static/media/pong.086393930a3f8be1a5d7.png",
     "index.html": "/my-web-page/index.html",
-    "main.ba9d2d5f.css.map": "/my-web-page/static/css/main.ba9d2d5f.css.map",
-    "main.f20529d5.js.map": "/my-web-page/static/js/main.f20529d5.js.map"
+    "main.1b103d7f.css.map": "/my-web-page/static/css/main.1b103d7f.css.map",
+    "main.83c3b7b1.js.map": "/my-web-page/static/js/main.83c3b7b1.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba9d2d5f.css",
-    "static/js/main.f20529d5.js"
+    "static/css/main.1b103d7f.css",
+    "static/js/main.83c3b7b1.js"
   ]
 }
