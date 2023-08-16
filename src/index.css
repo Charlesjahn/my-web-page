@@ -22,7 +22,7 @@ body {
 body {
     width: 100%;
     height: 100%;
-    /* background-image: url("img/back.jpg"); */
+    background-image: url("img/back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -65,7 +65,7 @@ section{
 @media only screen and (max-width: 1069px) {
 
     body {
-        /* background-image: url("img/backSmall.jpg"); */
+        background-image: url("img/smallback.jpg");
     }
 
 }
