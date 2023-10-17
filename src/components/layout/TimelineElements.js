@@ -130,7 +130,7 @@ let timeline = [
         title: "Web Developer Intern",
         location: "Babylon Radio Dublin",
         description: "A voluntary role where I am enhancing my web development skills by working with WordPress for maintenance and optimization, ensuring a seamless user experience across various devices. Additionally, I remotely managed the radio stream server, performing regular checks and updates to ensure uninterrupted broadcasting.",
-        date: "August 2023 - Present",
+        date: "August 2023 - November 2023",
         icon: "work",
         type: "tech"
     }
