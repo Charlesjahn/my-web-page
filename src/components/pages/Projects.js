@@ -1,7 +1,7 @@
 import 'react-vertical-timeline-component/style.min.css'
 import styles from './Projects.module.css'
 
-import { FaPython, FaJava, FaJs, FaReact } from 'react-icons/fa'
+import { FaPython, FaJava, FaJs, FaReact, FaUnity } from 'react-icons/fa'
 
 import React, { useState, useEffect } from 'react';
 
@@ -26,7 +26,8 @@ function Timeline() {
             javascript: { color: "#F9C74F" },
             python: { color: "#00FF00" },
             java: { color: "#FF6347" },
-            react: { color: "#00BFFF" },
+            react: { color: "#00BFFF" },            
+            unity: { color: "#c300ff" },
         };
         return styleMap[type] || {};
     }
@@ -41,6 +42,7 @@ function Timeline() {
             javascript: <FaJs />,
             java: <FaJava />,
             react: <FaReact />,
+            unity: <FaUnity />,
         };
         return iconMap[type] || null;
     }
