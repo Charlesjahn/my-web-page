@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/my-web-page/static/css/main.358f58b4.css",
-    "main.js": "/my-web-page/static/js/main.c02a99cd.js",
+    "main.js": "/my-web-page/static/js/main.bed66ad8.js",
     "static/media/me_thinking.png": "/my-web-page/static/media/me_thinking.1d670333d55e52a698e6.png",
-    "static/media/menu-sample.png": "/my-web-page/static/media/menu-sample.909f50c708d83bd5f1c9.png",
     "static/media/back.jpg": "/my-web-page/static/media/back.e4ccb8283fcf64e195d1.jpg",
     "static/media/smallback.jpg": "/my-web-page/static/media/smallback.712c62d60d725055e933.jpg",
+    "static/media/menu-sample.png": "/my-web-page/static/media/menu-sample.01eb8c07f0b481be7d52.png",
+    "static/media/flapbird.png": "/my-web-page/static/media/flapbird.7ab65512bde70d823868.png",
     "static/media/connectfour.png": "/my-web-page/static/media/connectfour.768ee75bc6e90943898a.png",
     "static/media/tic_tac_toe.png": "/my-web-page/static/media/tic_tac_toe.d8f0dd3d01f8418ab7dc.png",
     "static/media/sorting.png": "/my-web-page/static/media/sorting.b21dea3283d01cf7c85e.png",
@@ -14,10 +15,10 @@
     "static/media/pong.png": "/my-web-page/static/media/pong.086393930a3f8be1a5d7.png",
     "index.html": "/my-web-page/index.html",
     "main.358f58b4.css.map": "/my-web-page/static/css/main.358f58b4.css.map",
-    "main.c02a99cd.js.map": "/my-web-page/static/js/main.c02a99cd.js.map"
+    "main.bed66ad8.js.map": "/my-web-page/static/js/main.bed66ad8.js.map"
   },
   "entrypoints": [
     "static/css/main.358f58b4.css",
-    "static/js/main.c02a99cd.js"
+    "static/js/main.bed66ad8.js"
   ]
 }
