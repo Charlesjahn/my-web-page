@@ -89,10 +89,10 @@ function Timeline() {
                                             <a href={`https://charlesjahn.github.io/${p.name}/`} target="_blank" rel="noopener noreferrer">
                                                 Check it
                                             </a>
-                                        ) : (p.homepage !== null && (
+                                        ) : (
                                             <a href={p.homepage} target="_blank" rel="noopener noreferrer">
                                                 Check it
-                                            </a>)
+                                            </a>
                                         )}
                                     </div>
                                 </div>
