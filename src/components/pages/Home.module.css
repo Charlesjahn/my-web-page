@@ -19,6 +19,7 @@
     justify-content: space-evenly;
 }
 
+
 .text_home p {
     font-size: 1.3em;
     padding: .5em;
@@ -50,6 +51,31 @@
 
 .img_div {
     margin-top: 8em;
+}
+
+.divbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1em;
+}
+
+.divbtn a {
+    color: var(--color-black1);
+    text-decoration: none;
+    background-color: var(--color-primary);
+    padding: 0 0.5em;
+    border-radius: 1em;
+    transition: 0.4s;
+    box-shadow: 0px 0px 10px var(--color-primary-trans-trans),
+        0px 0px 20px var(--color-primary-trans-trans);
+}
+
+.divbtn a:hover {
+    color: var(--color-black1);
+
+    box-shadow: 0px 0px 10px var(--color-white-trans),
+        0px 0px 20px var(--color-white-trans);
 }
 
 @media only screen and (max-width: 1069px) {
@@ -96,6 +122,10 @@
     .sename,
     .suname {
         padding: 0 0.5em;
+    }
+    .divbtn {
+        flex-direction: column;
+        margin: 0.5em;
     }
 
 }
