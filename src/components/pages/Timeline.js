@@ -79,7 +79,7 @@ function Timeline() {
                                 icon={whickIcon(e.icon)}
                             >
                                 <h3>{e.title}</h3>
-                                <h5>{e.id}: {e.location}</h5>
+                                <h5>Location: {e.location}</h5>
                                 <p className={styles.pTime}>{e.description}</p>
                             </VerticalTimelineElement>
                         );
