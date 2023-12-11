@@ -23,7 +23,7 @@ let timeline = [
         location: "Senai Nilo Pecanha Caxias do Sul - RS, Br",
         description: "This course provided me with practical skills and an in-depth knowledge of AutoCAD and SolidWorks. I am adept at creating accurate 2D/3D technical designs and models, mastering drafting standards, dimensions and annotations.",
         date: "January 2011",
-        icon: "course",
+        icon: "school",
         type: "education"
     },
     {
@@ -50,7 +50,7 @@ let timeline = [
         location: "SESI Caxias do Sul - RS, Br",
         description: "Certified in lifesaving techniques including CPR, wound care and emergency response. Ready to provide critical assistance in high-pressure situations, contributing to a safer environment.",
         date: "May 2013",
-        icon: "course",
+        icon: "school",
         type: "education"
     },
     {
@@ -68,8 +68,8 @@ let timeline = [
         location: "Erin School of English - Irl",
         description: "Started my English language course, where I started from A2 lvl  and finished it C1 lvl.",
         date: "April 2018 - February 2020",
-        icon: "course",
-        type: ""
+        icon: "school",
+        type: "education"
     },
     {
         id: 11,
@@ -86,7 +86,7 @@ let timeline = [
         location: "Eric Levy - Dublin",
         description: "Completed the comprehensive barista course, mastering the art of crafting exceptional coffee drinks. Experience developed in the preparation of espresso and milk froth techniques. Trained in providing top-notch customer service, ensuring a welcoming and enjoyable cafe experience.",
         date: "November 2019",
-        icon: "course",
+        icon: "school",
         type: "education"
     },
     {
