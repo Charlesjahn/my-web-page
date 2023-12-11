@@ -22,7 +22,7 @@ function Home() {
                 <p>Enthusiastic about my journey as a Software Engineer, actively advancing my proficiency in a range of technologies—Unity, C#, React, HTML, CSS, JavaScript, Node.js, SpringBoots, Java, Python. Continually exploring new languages and frameworks to broaden my expertise.</p>
                 <div className={styles.divbtn}>
                     <a
-                        href="https://drive.google.com/file/d/1a2Qdim6jN9ywFR7XW_2U1EYrq1sL-sNw/view?usp=sharing"
+                        href="https://docs.google.com/document/d/1_Z9X1AuOFfN6O8lkR11L5ZUtV_QDmDV6/edit?usp=sharing&ouid=104708340851566677002&rtpof=true&sd=true"
                         download="CharlesJahnCV.pdf"
                         rel="noopener noreferrer"
                         >
