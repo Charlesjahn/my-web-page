@@ -1,7 +1,7 @@
 import 'react-vertical-timeline-component/style.min.css'
 import styles from './Timeline.module.css'
 
-import { FaBirthdayCake, FaSchool, FaUserGraduate, FaBook, FaIndustry, FaPlaneArrival } from 'react-icons/fa'
+import { FaBirthdayCake, FaUserGraduate, FaBook, FaIndustry, FaPlaneArrival } from 'react-icons/fa'
 
 import timelineElements from '../layout/TimelineElements'
 
@@ -24,7 +24,6 @@ function Timeline() {
             work: { background: "#06D6A0" },
             school: { background: "#F9C74F" },
             travel: { background: "#FF6347" },
-            course: { background: "#FF69B4" },
             graduation: { background: "#00BFFF" },
             born: { background: "#9400D3" },
         };
@@ -34,9 +33,8 @@ function Timeline() {
     function whickIcon(type) {
         const iconMap = {
             work: <FaIndustry />,
-            school: <FaSchool />,
+            school: <FaBook />,
             travel: <FaPlaneArrival />,
-            course: <FaBook />,
             graduation: <FaUserGraduate />,
             born: <FaBirthdayCake />,
         };
