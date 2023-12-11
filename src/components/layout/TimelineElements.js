@@ -12,7 +12,7 @@ let timeline = [
         id: 2,
         title: "Industrial Mechanic Technician",
         location: "Senai Nilo Pecanha Caxias do Sul - RS, Br",
-        description: "An intensive Industrial Mechanic Technician course that covered a diverse range of subjects such as equipment maintenance, troubleshooting, assembly, and repair techniques. Which included both hands-on practical training and theoretical coursework, in analyzing technical problems, utilizing specialized tools, and implementing safety protocols in industrial environments. Able me to make valuable contributions in maintenance operations, process enhancement, and collaborative teamwork within the industrial sector.",
+        description: "Comprehensive Industrial Mechanics Technician program covering diverse skills in equipment maintenance, troubleshooting, repair techniques and safety protocols. This training allows me to contribute to maintenance, process improvement and teamwork.",
         date: "February 2009 to November 2010",
         icon: "school",
         type: "education"
@@ -21,7 +21,7 @@ let timeline = [
         id: 3,
         title: "AutoCAD & SolidWorks",
         location: "Senai Nilo Pecanha Caxias do Sul - RS, Br",
-        description: "Through this comprehensive course, I gained hands-on experience and a deep understanding of the fundamental concepts, techniques, and tools used in both AutoCAD and SolidWorks. Proficient in producing accurate 2D and 3D technical drawings and models using AutoCAD and SolidWorks, with a strong grasp of drafting standards, dimensioning, and annotation practices. ",
+        description: "This course provided me with practical skills and an in-depth knowledge of AutoCAD and SolidWorks. I am adept at creating accurate 2D/3D technical designs and models, mastering drafting standards, dimensions and annotations.",
         date: "January 2011",
         icon: "course",
         type: "education"
@@ -39,7 +39,7 @@ let timeline = [
         id: 5,
         title: "Industrial Mechanic Assistant",
         location: "AEtech Máquinas e Segurança Industrial Ltda Caxias do Sul - RS, Br",
-        description: "Assisted in the installation of security systems, diagnosis, repair and maintenance of hydraulic and pneumatic systems. I actively participated in equipment installations, consistently respecting safety protocols. Gained valuable hands-on experience in a dynamic industrial environment, focusing on the complex mechanics of hydraulic and pneumatic technologies.",
+        description: "Assisted in the installation of security systems and worked on diagnosis, repair and maintenance of hydraulic and pneumatic systems. By actively following safety protocols, I gained valuable experience focusing on complex hydraulic and pneumatic mechanics.",
         date: "November 2012 - May 2013",
         icon: "work",
         type: "profession"
@@ -57,7 +57,7 @@ let timeline = [
         id: 7,
         title: "Industrial Mechanical Technician",
         location: "AEtech Máquinas e Segurança Industrial Ltda Caxias do Sul - RS, Br",
-        description: "Industrial Mechanical Technician with experience in hydraulic and pneumatic industrial machines. Skilled in installing, maintaining and repairing complex mechanical systems. Proven experience in troubleshooting and diagnosing problems to ensure optimal operator and machine functionality and safety. Adept at reading blueprints and technical schematics.",
+        description: "Industrial Mechanics Technician with experience in hydraulic and pneumatic machines. Proficient in installation, maintenance and repair of complex mechanical systems. Skilled in diagnosing problems to ensure safety and optimal machine performance and interpreting technical designs and schematics.",
         date: "May 2013 - February 2018",
         icon: "work",
         type: "profession"
@@ -75,7 +75,7 @@ let timeline = [
         id: 11,
         title: "Residential Maintenance Technician",
         location: "Egali Exchange - Dublin, Irl",
-        description: "Proficient in all aspects of property maintenance, ensuring safe, comfortable and well-functioning living environments. Proven ability to quickly identify and resolve maintenance issues to minimize disruptions and increase resident satisfaction. Committed to maintaining high standards of cleanliness, safety and functionality in student accommodation.",
+        description: "Skilled in property maintenance for safe and comfortable spaces. Known for quickly resolving maintenance issues, increasing resident satisfaction and maintaining high standards in student accommodation in terms of cleanliness, safety and functionality.",
         date: "June 2018 - April 2020",
         icon: "work",
         type: "profession"
@@ -100,9 +100,9 @@ let timeline = [
     },
     {
         id: 14,
-        title: "Bachelor of Computer Science",
+        title: "Bachelor of Science (Hons) in Computing and IT - NFQ Level 8",
         location: "CCT College Dublin",
-        description: "It conceives forms of modernization of products or processes through design, execution and implementation of new industrial process controls. It develops new products or solutions with regard to automation, in the search for the reduction of human intervention in the operation of machines and equipment, in the development of products that facilitate human mobility.",
+        description: "Complete education in IT and computer science, covering programming, software development, networking, cybersecurity and data analysis. Equipped with practical and theoretical skills for dynamic careers in an ever-changing field, empowering you to tackle complex challenges and drive IT innovation.",
         date: "September 2020 - Present",
         icon: "graduation",
         type: "tech"
@@ -111,7 +111,7 @@ let timeline = [
         id: 15,
         title: "Team Leader / Manager",
         location: "Life in Motion Bike Shop - Dublin",
-        description: "Assuming the role of Chief Mechanic and Technical Manager, I was responsible for overseeing bike services, managing parts inventory and ensuring exceptional customer service. During this time, I honed strong communication and negotiation skills. Introduced an innovative approach to customer service and implemented a new checklist methodology, resulting in better customer satisfaction rates and reduced losses throughout the process.",
+        description: "As chief mechanic and technical manager leading bicycle services, I managed inventory and prioritized high-level customer service. I improved communication and negotiation skills, introducing innovative customer service methods and a checklist system that increased customer satisfaction.",
         date: "June 2021 - May 2023",
         icon: "work",
         type: "profession"
@@ -129,7 +129,7 @@ let timeline = [
         id: 17,
         title: "Web Developer Intern",
         location: "Babylon Radio Dublin",
-        description: "A voluntary role where I am enhancing my web development skills by working with WordPress for maintenance and optimization, ensuring a seamless user experience across various devices. Additionally, I remotely managed the radio stream server, performing regular checks and updates to ensure uninterrupted broadcasting.",
+        description: "As a volunteer, I improved web development skills with WordPress, focusing on maintenance and optimization for a smooth user experience across different devices. It also managed a remote radio broadcast server, performing regular checks and updates to maintain uninterrupted transmission.",
         date: "August 2023 - November 2023",
         icon: "work",
         type: "tech"
